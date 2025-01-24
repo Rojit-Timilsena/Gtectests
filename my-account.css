@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: #000000; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Account Container */
+  .account-container {
+    background: #1a1a1a; /* Slightly lighter black */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 400px;
+  }
+  
+  /* Profile Picture Section */
+  .profile-picture {
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture img {
+    width: 100px; /* Size of the profile picture */
+    height: 100px;
+    border-radius: 50%; /* Makes the image circular */
+    border: 3px solid #ffffff; /* White border for contrast */
+    object-fit: cover; /* Ensures the image fills the circle without distortion */
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  .profile-picture img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  .account-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .account-details {
+    background: #111111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .account-details h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .account-details p {
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 10px;
+  }
+  
+  /* Buttons */
+  .account-actions .btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid transparent; /* Avoid shaking by predefining border width */
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth animation */
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  .account-actions .btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #ffffff; /* Avoid size change */
+    transform: scale(1.05); /* Minimal hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .account-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .btn {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
