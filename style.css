@@ -15,7 +15,7 @@ body {
 /* Header Section */
 header {
     position: relative;
-    background: url('gteclogo.png') center/contain no-repeat;
+    /* background: url('gteclogo.png') center/contain no-repeat; */
     height: 150px;
     text-align: center;
     overflow: hidden;
@@ -34,7 +34,7 @@ header::before {
 
 header nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
     padding: 20px 30px;
     z-index: 2;

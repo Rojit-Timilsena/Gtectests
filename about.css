@@ -135,3 +135,18 @@ body {
     border: 3px solid #00ffff; /* Cyan border on hover */
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glow effect */
 }
+
+.team-card img[src="founder.jpg"] {
+    transform: rotate(-15deg); /* Rotates the image 15 degrees anticlockwise */
+    transition: transform 0.3s ease; /* Adds smooth animation for the rotation */
+}
+
+.team-card img[src="person-4.jpeg"] {
+    object-fit: cover; /* Ensures the image fills the circular area */
+    object-position: center 30%; /* Positions the image slightly above center */
+    transition: object-position 0.3s ease; /* Smooth animation */
+}
+
+.team-card:hover img[src="person-4.jpeg"] {
+    object-position: center 30%; /* Keeps the movement consistent on hover */
+}
